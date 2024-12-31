@@ -98,7 +98,7 @@ resource "aws_nat_gateway" "main" {
   depends_on = [aws_internet_gateway.main]
 }
 
-#public route tablke
+#public route table
 resource "aws_route_table" "public" {
   vpc_id = aws_vpc.main.id
   tags = merge(
