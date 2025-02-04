@@ -14,31 +14,31 @@ for high availability we are going to get first 2 AZ's.
 * private route table
 * databse route table
 * routees
-* route atble associtation with subnets
+* route table associtation with subnets
 * pering with default vpc if required
 * perring routs in accepter and requester route tables
 
 #Inputs
 * project_name (mandatory) : user must supply  
 * environment (mandatory) : user must supply  
-* vpc_cidr (mandatory) : user must suppty ther vpc cidr
+* vpc_cidr (mandatory) : user must supply there vpc cidr
 * enable_dns_hostnames (optional ) : defaults to true.
-* common_tags (optional ) : default is empty . user can supplt tags in map(striings)
-* vpc_tags (optional) : default is empty . user can supplt tags in map(striings)
-* igw_tags (optional) :default is empty . user can supplt tags in map(striings)
+* common_tags (optional ) : default is empty . user can supplt tags in map(string)
+* vpc_tags (optional) : default is empty . user can supplt tags in map(string)
+* igw_tags (optional) :default is empty . user can supplt tags in map(string)
 * public_subnet_cidrs (mandatory) : user must supply ONLY 2 cidrs
-* public_subnet_tags (optional) : default is empty . user can supplt tags in map(striings)
+* public_subnet_tags (optional) : default is empty . user can supplt tags in map(string)
 * private_subnet_cidrs (mandatory) : user must supply ONLY 2 cidrs
-* private_subnet_tags (optional) : default is empty . user can supplt tags in map(striings)
+* private_subnet_tags (optional) : default is empty . user can supplt tags in map(string)
 * database_subnet_cidrs (mandatory) : user must supply ONLY 2 cidrs
-* database_subnet_tags (optional) : default is empty . user can supplt tags in map(striings)
-* db_subnet_group_tags ( optional) :  default is empty . user can supplt tags in map(striings)
-* nat_gateway_tags ( optional) :  default is empty . user can supplt tags in map(striings)
-* public_route_table_tags ( optional) :  default is empty . user can supplt tags in map(striings)
-* private_route_table_tags ( optional) :  default is empty . user can supplt tags in map(striings)
-* database_route_table_tags ( optional) :  default is empty . user can supplt tags in map(striings)
+* database_subnet_tags (optional) : default is empty . user can supplt tags in map(string)
+* db_subnet_group_tags ( optional) :  default is empty . user can supplt tags in map(string)
+* nat_gateway_tags ( optional) :  default is empty . user can supplt tags in map(string)
+* public_route_table_tags ( optional) :  default is empty . user can supplt tags in map(string)
+* private_route_table_tags ( optional) :  default is empty . user can supplt tags in map(string)
+* database_route_table_tags ( optional) :  default is empty . user can supplt tags in map(string)
 * is_peering_required (optional) : DEFAULTS to False
-* vpc_peering_tags ( optional) :  default is empty . user can supplt tags in map(striings)
+* vpc_peering_tags ( optional) :  default is empty . user can supplt tags in map(string)
 
 #outputs
 * vpc_id : vpc id created
